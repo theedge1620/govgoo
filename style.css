@@ -1,0 +1,35 @@
+body {
+    background-color: 
+    #cccccc;
+}
+h1 {    
+    color:tomato;
+    font-size: 17px;
+    font-family:Arial;
+}
+
+h2 {
+    font-family:Arial;
+    font-size:14px;
+    color:black;
+}
+
+h3 {
+    font-family:Arial;
+    font-size:13px;
+    color:black;
+}
+
+p {
+    font-family:Arial;
+    font-weight:bold;
+    font-size:15px;
+    color:black;
+}
+
+.jobs_table { 
+    border: 2px solid black;
+}
+
+
+
