@@ -27,15 +27,6 @@ p {
     color:black;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-  
-span {
-    margin-bottom: 20px;
-}
-
 .jobs_table { 
     border: 2px solid black;
 }
