@@ -14,10 +14,6 @@ button.addEventListener('click', async ()=> {
     var salaryDesired = Number(salaryInput);
     let checkBox = document.getElementById("partTimeHourly");
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6f881b89b8949aefcb3789f63f80470d83df8eca
     let queryUrl = 'https://data.usajobs.gov/api/Search?RemoteIndicator=True&Keyword='+jobKeyWord+'&ResultsPerPage=250'
 
 
