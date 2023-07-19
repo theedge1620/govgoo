@@ -113,7 +113,7 @@ button.addEventListener('click', async ()=> {
         
         createTable();
        
-     });
+     })
             
      .catch(err => {
         console.log(err);
