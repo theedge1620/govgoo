@@ -45,7 +45,7 @@ button.addEventListener('click', async ()=> {
         var jobsArray = response.data.SearchResult.SearchResultItems;
         console.log(jobsArray.length);
 
-        /// define the function to create a Table with the returned job results from the query:
+        /// create a Table with the returned job results from the query:
 
         function createTable() {
 
