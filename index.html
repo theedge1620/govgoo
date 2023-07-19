@@ -10,29 +10,38 @@
 </head>
 
 <body>
-    <p>Welcome to GOVGOO, the app to get you working for the government and also out of the office!</p>
-    <p>Input a keyword and job parameters below and click "Jobby Jobs".</p>
+    <header>
+
+        <p>Welcome to GOVGOO, the app to get you working for the government and also out of the office!</p>
+        <p>This application uses the USAJOBs API to search for currently posted remote jobs and provides the user with a table of all of the relevant results for remote work.</p>
+
+    </header>
+
+    <main>
+
+        <p>Input a keyword and job parameters below and click "Jobby Jobs".</p>
     
-    <article>
+        <article>
 
-        <label for="keywordInput">Job Keyword: </label>
-        <input id="keywordInput" type="text" placeholder="Enter Job Keyword" />
-    </article>
-    <article>
-        <label for="desiredSalary">Desired Salary: </label>   
-        <input id="desiredSalary" type="text" placeholder="Enter Desired Minimum Salary" />
-        
-    </article>
+            <label for="keywordInput">Job Keyword: </label>
+            <input id="keywordInput" type="text" placeholder="Enter Job Keyword" />
+        </article>
+        <article>
+            <label for="desiredSalary">Desired Salary: </label>   
+            <input id="desiredSalary" type="text" placeholder="Enter Desired Minimum Salary" />
+            
+        </article>
 
-    <article>
-        <label for="partTimeHourly"> Include Hourly and Part-Time Postions:</label>
-        <input type="checkbox" id="partTimeHourly" name="partTimeHourly" value="Part-Time">
-        
-    </article>
+        <article>
+            <label for="partTimeHourly"> Include Hourly and Part-Time Postions:</label>
+            <input type="checkbox" id="partTimeHourly" name="partTimeHourly" value="Part-Time">
+            
+        </article>
 
-    <button id="submitButton"> Jobby Jobs </button>
+        <button id="submitButton"> Jobby Jobs </button>
 
-    <footer>This application uses the USAJOBs API to search for currently posted remote jobs and provides the user with a table of all of the relevant results for remote work.</footer>
+    </main>
+   
 
 </body>
 </html>

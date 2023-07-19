@@ -27,6 +27,11 @@ p {
     color:black;
 }
 
+footer {
+   
+    padding: 1rem 1rem 2rem 2rem;
+}
+
 .jobs_table { 
     border: 2px solid black;
 }
