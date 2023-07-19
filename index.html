@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -11,15 +13,25 @@
 <body>
     <p>Welcome to GOVGOO, the app to get you working for the government and also out of the office!</p>
     <p>Input a keyword and job parameters below and click "Jobby Jobs".</p>
-    <input id="textInput" type="text" placeholder="Enter city here" />
-    <button id="submitButton"> Jobby Jobs </button>
-
     
+    <article>
 
-    <h1 id="cityName"> </h1>
-    <img src="">
-    <h2 id="temp"> </h2>
-    <h3 id="heatIndex"> </h3>
+        <label for="keywordInput">Job Keyword: </label>
+        <input id="keywordInput" type="text" placeholder="Enter Job Keyword" />
+    </article>
+    <article>
+        <label for="desiredSalary">Desired Salary: </label>   
+        <input id="desiredSalary" type="text" placeholder="Enter Desired Minimum Salary" />
+        
+    </article>
+
+    <article>
+        <label for="partTimeHourly"> Include Hourly and Part-Time Postions:</label>
+        <input type="checkbox" id="partTimeHourly" name="partTimeHourly" value="Part-Time">
+        
+    </article>
+
+    <button id="submitButton"> Jobby Jobs </button>
 
     <footer>This application uses the USAJOBs API to search for currently posted remote jobs and provides the user with a table of all of the relevant results for remote work.</footer>
 
