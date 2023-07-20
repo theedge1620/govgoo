@@ -1,10 +1,14 @@
 body {
     background-color: 
-    #cccccc;
+    #f1eeee;
 }
-h1 {    
-    color:tomato;
-    font-size: 17px;
+
+
+
+header {    
+    color:black;
+    font-weight:bold;
+    font-size: 19px;
     font-family:Arial;
 }
 
@@ -22,15 +26,11 @@ article {
 
 p {
     font-family:Arial;
-    font-weight:bold;
     font-size:15px;
     color:black;
 }
 
-footer {
-   
-    padding: 1rem 1rem 2rem 2rem;
-}
+
 
 table.jobs_table { 
     border: 2px solid black;

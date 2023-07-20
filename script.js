@@ -49,20 +49,20 @@ button.addEventListener('click', async ()=> {
             var headers = ["Job Title", "Agency", "Max Pay","Closing Date","Link"];
             var table = document.createElement("TABLE");  //makes a table element for the page
 
-            
-            
+            // add a class to the table for dynamic styling:          
 
             table.setAttribute("class", "jobs_table");
 
-            if (jobsArray.length > 0) {
+            if (jobsArray.length > 0) {//  If there are job results, display them in a table.
    
-                for(var i = 0; i < jobsArray.length; i++) {
+                for(var i = 0; i < jobsArray.length; i++) { // For each job, insert a row with the desired information
                     var row = table.insertRow(i);
+
+                    // get the maximum pay amount from the returned data for each position:
 
                     var payType = jobsArray[i].MatchedObjectDescriptor.PositionRemuneration[0].Description;
 
                     
-
                     if (payType == 'Per Year') {  // if this is an annual salary, fix the string returned.
                         
                         var payString = jobsArray[i].MatchedObjectDescriptor.PositionRemuneration[0].MaximumRange;
@@ -99,7 +99,7 @@ button.addEventListener('click', async ()=> {
                     }
                 }
             }
-            else {
+            else {  // if no jobs are returned, dispaly a no jobs returned message to alert the user.
                 var row = table.insertRow(i);
                 row.insertCell(0).innerHTML = "No jobs returned for this search.";
                 row.insertCell(1).innerHTML = "";
