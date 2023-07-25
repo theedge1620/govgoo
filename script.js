@@ -50,6 +50,7 @@ button.addEventListener('click', async ()=> {
         // If the response is good, let's update the page with the results:
         console.log(response);
 
+        // Store the job results in an array called jobsArray:
         var jobsArray = response.data.SearchResult.SearchResultItems;
         console.log(jobsArray.length);
 
@@ -57,8 +58,10 @@ button.addEventListener('click', async ()=> {
 
         function createTable() {
 
+            
+            // Set up the array of headers for the table columns:
             var headers = ["Job Title", "Agency", "Max Pay","Closing Date","Link"];
-            var table = document.createElement("TABLE");  //makes a table element for the page
+            var table = document.createElement("TABLE");  //make a table element for the page
 
             // add a class to the table for dynamic styling:          
 
