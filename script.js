@@ -11,7 +11,18 @@ button.addEventListener('click', async ()=> {
     // Set up the URL query for remote jobs:
     let jobKeyWord = document.getElementById("keywordInput").value;
     let salaryInput = document.getElementById("desiredSalary").value;
-    var salaryDesired = Number(salaryInput);
+
+    if (salaryInput.includes("$")) { // if the user puts in a dollar sign, remove it
+        let temporaryString = salaryInput;
+        var salaryDesired = Number(temporaryString.replace("$",""));
+        
+    }
+    else {
+        var salaryDesired = Number(salaryInput);
+    }
+
+    console.log(salaryDesired);
+
     let checkBox = document.getElementById("partTimeHourly");
 
     let queryUrl = 'https://data.usajobs.gov/api/Search?RemoteIndicator=True&Keyword='+jobKeyWord+'&ResultsPerPage=250'
@@ -57,6 +68,7 @@ button.addEventListener('click', async ()=> {
    
                 for(var i = 0; i < jobsArray.length; i++) { // For each job, insert a row with the desired information
                     var row = table.insertRow(i);
+                    row.classList.add("table_row"); // add a class to the table row
 
                     // get the maximum pay amount from the returned data for each position:
 
@@ -112,6 +124,7 @@ button.addEventListener('click', async ()=> {
         
             var header = table.createTHead();
             var headerRow = header.insertRow(0);
+            header.classList.add("table_header");
             for(var i = 0; i < headers.length; i++) {
                 headerRow.insertCell(i).innerHTML = headers[i];
             }
