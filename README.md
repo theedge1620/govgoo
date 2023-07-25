@@ -9,7 +9,7 @@ The application returns all jobs from the USAJOBS API that have a RemoteFlag pro
 The application makes a call to the USAJobs API with a request that matches the following user-defined criteria:
 
 - Job Keyword (e.g., Engineer, Computer Scientist, Project Manager, Data Science)
-- Desired Salary (input as an integer or decimal without commas or dollar sign).
+- Desired Salary (in dollars per year).
 - A checkbox input on whether the user wants to include part time or hourly work results
 
 The application checks that the maximum pay for the position meets at least the user-defined minimum desired salary.
@@ -66,7 +66,7 @@ I had prior basic knowledge of API calls, but the ability to access the elements
 
 ###  What I would do next time
 
-If done over, or in the future, I would like to look into using React for this project, and possibly TypeScript for display of results. There are potential applications at my work that could benefit from using these libraries.
+If done over, or in the future, I would like to look into using React for this project, and possibly TypeScript for display of results. There are potential applications at my work that could benefit from using these libraries.  I would also add in some additional information on whether the user wants to see the amount of travel required for each position in case that is a factor.
 
 
 
